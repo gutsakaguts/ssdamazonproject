@@ -1,29 +1,5 @@
-const products = [{ //here we are creating objects inside an array .why?
-    image: 'images/products/athletic-cotton-socks-6-pairs.jpg',
-    name : 'Black and Gray Athletic Cotton Socks - 6 Pairs',
-    rating: {
-        stars: 4.5,
-        count: 87
-    },
-    priceCents: 1090 //we saved in cents . why?
-}, {
-    image:'images/products/intermediate-composite-basketball.jpg',
-    name: 'Intermediate Size Basketball',
-    rating : {
-        stars: 4,
-        count: 127
-    },
-    priceCents: 2095
-},{
-    image:'images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
-    name: 'Adults Plain Cotton T - Shirt -2 Pack',
-    rating:{
-        stars: 4.5,
-        count:56
-    },
-    priceCents: 799
-}];
-//foreach takes each object....stores it in the parameter called product and then runs the function !
+
+//foreach is an array method that takes each object....stores it in the parameter called product and then runs the function !
 
 let productsHTML = ' ';
 
@@ -82,3 +58,4 @@ products.forEach((product )=>{ //This is called an accumulator pattern...each ti
 
 console.log(productsHTML);
 document.querySelector('.js-products-grid').innerHTML = productsHTML;//now after this line we are generating all of our html using javascript and using the DOM to put it in line 55.
+innerHTML = productsHTML;

@@ -1,4 +1,4 @@
-const products = [
+const products = [ //here we are creating objects in an array
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
@@ -7,14 +7,14 @@ const products = [
       stars: 4.5,
       count: 87
     },
-    priceCents: 1090,
+    priceCents: 1090, // we saved in cents why?
     keywords: [
       "socks",
       "sports",
       "apparel"
     ]
-  },
-  {
+  },//foreach is an array method that takes each object....stores it in the parameter called product and then runs the function !
+  {//This is called an accumulator pattern...each time we loop through the arr and add to the result.
     id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
     image: "images/products/intermediate-composite-basketball.jpg",
     name: "Intermediate Size Basketball",
