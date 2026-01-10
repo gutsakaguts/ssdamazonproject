@@ -1,5 +1,5 @@
 
-//foreach is an array method that takes each object....stores it in the parameter called product and then runs the function !
+//foreach is an array method thattakes each object....stores it in the parameter called product and then runs the function !
 
 let productsHTML = ' ';
 
@@ -49,13 +49,20 @@ products.forEach((product )=>{ //This is called an accumulator pattern...each ti
                 Added
             </div>
 
-            <button class="add-to-cart-button button-primary">
+            <button class="add-to-cart-button button-primary js-add-to-cart">
                 Add to Cart
             </button>
             </div>`;
          
 });
 
-console.log(productsHTML);
+
 document.querySelector('.js-products-grid').innerHTML = productsHTML;//now after this line we are generating all of our html using javascript and using the DOM to put it in line 55.
 innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart')//this will give us all the add to cart buttons on the page
+.forEach((button)=>{
+    button.addEventListener('click',()=> {
+        console.log('Added product');
+    })
+})
